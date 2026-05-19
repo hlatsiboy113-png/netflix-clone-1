@@ -7,128 +7,159 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="nav bar">
-        <img src="Assets\Netflix_Logo_PMS.png" class="logo">
+    <!-- Header & Hero Section -->
+    <div class="hero-bg">
+        <header>
+            <h1 class="logo"><img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="Netflix Logo"></h1>
+            <a href="#" class="sign-in-btn">Sign In</a>
+        </header>
 
-        <button>Sign In</button>
-    </nav>
-
-    <header class="hero">
-        <h1>Unlimited movies, TV shows and more.</h1>
-        <p>Starts at R59. Cancel anytime.</p>
-        <p>
-            Ready to watch? Enter your email to create or restart your membership.
-        </p>
-
-        <div class="input">
-            <input type="email" placeholder="Email Address">
-            <button>Get Started</button>
+        <div class="hero-content">
+            <h1>Unlimited movies, TV shows, and more</h1>
+            <p class="subtitle">Starts at R 59. Cancel anytime.</p>
+            <p class="prompt">Ready to watch? Enter your email to create or restart your membership.</p>
+            
+            <div class="email-form">
+                <input type="email" placeholder="Email address">
+                <button type="submit">Get Started ></button>
+            </div>
         </div>
-    </header> 
-    
-    <section class="movies">
+    </div>
+    <div class="curve"></div>
+    <!-- Trending Now Section -->
+    <section class="trending">
         <h2>Trending Now</h2>
-
-        <div class=""movie-row>
-            <img src="Assets/Movie1.webp" class="Movie">
-            <img src="Assets/Movie2.webp" class="Movie">
-            <img src="Assets/Movie3.webp" class="Movie">
-            <img src="Assets/Movie4.webp" class="Movie">
-            <img src="Assets/Movie5.webp" class="Movie">
-            <img src="Assets/Movie6.webp" class="Movie">
-            <img src="Assets/Movie7.webp" class="Movie">
-            <img src="Assets/Movie8.webp" class="Movie">
-            <img src="Assets/Movie9.webp" class="Movie">
-            <img src="Assets/Movie10.webp" class="Movie">
+        <div class="carousel">
+            <div class="movie-card">
+                <span class="number">1</span>
+                <img src="assets/Movie1.webp" alt="Movie 1">
+            </div>
+            <div class="movie-card">
+                <span class="number">2</span>
+                <img src="assets/Movie2.webp" alt="Movie 2">
+            </div>
+            <div class="movie-card">
+                <span class="number">3</span>
+                <img src="assets/Movie3.webp" alt="Movie 3">
+            </div>
+            <div class="movie-card">
+                <span class="number">4</span>
+                <img src="assets/Movie4.webp" alt="Movie 4">
+            </div>
+            <div class="movie-card hidden-movie">
+                <span class="number">5</span>
+                <img src="assets/Movie5.webp" alt="Movie 5">
+            </div>
+            <div class="movie-card hidden-movie">
+                <span class="number">6</span>
+                <img src="assets/Movie6.webp" alt="Movie 6">
+            </div>
+            <div class="movie-card hidden-movie">
+                <span class="number">7</span>
+                <img src="assets/Movie7.webp" alt="Movie 7">
+            </div>
+            <div class="movie-card hidden-movie">
+                <span class="number">8</span>
+                <img src="assets/Movie8.webp" alt="Movie 8">
+            </div>
+            <div class="movie-card hidden-movie">
+                <span class="number">9</span>
+                <img src="assets/Movie9.webp" alt="Movie 9">
+            </div>
         </div>
+        <button class="view-more-btn">View More Movies</button>
     </section>
 
-    <section class="reason-container">
-    
+    <!-- More Reasons to Join Section -->
+    <section class="reasons">
         <h2>More Reasons to Join</h2>
-
-        <div class="reason-box">
-            <h3>Enjoy your TV</h3>
-            <p>
-                Watch your favorite shows and movies on any device, anywhere.
-            </p>
-        </div>   
-
-        <div class="reason-box">
-            <h3>Download your shows</h3>
-            <p>
-                Save your favourites easily and always have something to watch.
-            </p>
+        <div class="reasons-grid">
+            <div class="reason-card">
+                <h3>Enjoy on your TV</h3>
+                <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+                <div class="icon">📺</div>
+            </div>
+            <div class="reason-card">
+                <h3>Download your shows to watch offline</h3>
+                <p>Save your favorites easily and always have something to watch.</p>
+                <div class="icon">⬇️</div>
+            </div>
+            <div class="reason-card">
+                <h3>Watch everywhere</h3>
+                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                <div class="icon">🔭</div>
+            </div>
+            <div class="reason-card">
+                <h3>Create profiles for kids</h3>
+                <p>Send kids on adventures with their favorite characters in a space made just for them — free with your membership.</p>
+                <div class="icon">😊</div>
+            </div>
         </div>
-         
-        <div class="reason-box">
-            <h3>Create profiles for kids</h3>
-            <p>
-                Send children on adventures with their favorite characters in a space made just for them—free with your membership.
-            </p>
-        </div> 
-
     </section>
 
-   <!-- FAQ SECTION -->
-<!-- Using semantic HTML with details and summary -->
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <ul class="faq-list">
+            <li>
+                <span>What is Netflix?</span>
+                <span class="plus">+</span>
+            </li>
+            <li>
+                <span>How much does Netflix cost?</span>
+                <span class="plus">+</span>
+            </li>
+            <li>
+                <span>Where can I watch?</span>
+                <span class="plus">+</span>
+            </li>
+            <li>
+                <span>How do I cancel?</span>
+                <span class="plus">+</span>
+            </li>
+        </ul>
+    </section>
 
-<section class="faq">
-
-    <h2>Frequently Asked Questions</h2>
-
-    <details class="faq-box">
-        <summary class="faq-question">
-            What is Netflix?
-        </summary>
-
-        <div class="faq-answer">
-            <p>
-                Netflix is a streaming service that offers movies, TV shows and more.
-            </p>
+    <!-- Footer Section with Email Form -->
+    <footer class="footer">
+        <p>Questions? Call 000-800-919-1694</p>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Speed Test</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Help Centre</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Cookie Preferences</a></li>
+                <li><a href="#">Legal Notices</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Ways to Watch</a></li>
+                <li><a href="#">Corporate Information</a></li>
+                <li><a href="#">Only on Netflix</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Media Centre</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
         </div>
-    </details>
-
-    <details class="faq-box">
-        <summary class="faq-question">
-            How much does Netflix cost?
-        </summary>
-
-        <div class="faq-answer">
-            <p>
-                Watch Netflix on your smartphone, TV, laptop and tablet.
-            </p>
+        <div class="lang-selector">
+            <select>
+                <option>English</option>
+                <option>Sepedi</option>
+            </select>
         </div>
-    </details>
-
-    <details class="faq-box">
-        <summary class="faq-question">
-            Where can I watch?
-        </summary>
-
-        <div class="faq-answer">
-            <p>
-                You can watch anywhere and anytime on multiple devices.
-            </p>
+        <p class="netflix-country">Netflix South Africa</p>
+        <div class="email-form footer-email-form">
+            <p class="prompt">Ready to watch? Enter your email to create or restart your membership.</p>
+            <input type="email" placeholder="Email address">
+            <button type="submit">Get Started ></button>
         </div>
-    </details>
-
-    <details class="faq-box">
-        <summary class="faq-question">
-            Is Netflix good for kids?
-        </summary>
-
-        <div class="faq-answer">
-            <p>
-                Netflix has a dedicated kids experience with family-friendly content.
-            </p>
-        </div>
-    </details>
-
-</section>
-
-    <footer>
-        <p>Netflix Clone Project</p>
     </footer>
 </body>
 </html>
