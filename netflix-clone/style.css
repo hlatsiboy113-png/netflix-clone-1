@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    background: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.navbar button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 50px;
+
+    position: absolute;
+    width: 100%;
+
+    z-index: index 10;
+}
+
+.logo{
+    width:140px;
+}
+
+.navbar button{
+    background: red;
+    color: white;
+
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; 
+    cursor: pointer;
+}
